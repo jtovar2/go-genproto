@@ -854,6 +854,8 @@ type CreateCapacityCommitmentRequest struct {
 	// If true, fail the request if another project in the organization has a
 	// capacity commitment.
 	EnforceSingleAdminProjectPerOrg bool `protobuf:"varint,4,opt,name=enforce_single_admin_project_per_org,json=enforceSingleAdminProjectPerOrg,proto3" json:"enforce_single_admin_project_per_org,omitempty"`
+	// Adding this so capacityId can be set
+	CapacityCommitmentId string  `protobuf:"bytes,1,opt,name=capacity_commitment_id,proto3" json:"capacity_commitment_id,omitempty"`
 }
 
 func (x *CreateCapacityCommitmentRequest) Reset() {
