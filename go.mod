@@ -1,4 +1,4 @@
-module google.golang.org/genproto
+module github.com/jtovar2/go-genproto
 
 go 1.11
 
