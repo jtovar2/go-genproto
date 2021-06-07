@@ -896,6 +896,12 @@ func (x *CreateCapacityCommitmentRequest) GetParent() string {
 	}
 	return ""
 }
+func (x *CreateCapacityCommitmentRequest) GetCapacityCommitmentId() string {
+	if x != nil {
+		return x.CapacityCommitmentId
+	}
+	return ""
+}
 
 func (x *CreateCapacityCommitmentRequest) GetCapacityCommitment() *CapacityCommitment {
 	if x != nil {
